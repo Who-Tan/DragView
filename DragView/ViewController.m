@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 60)];
     btn.backgroundColor = [UIColor orangeColor];
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
